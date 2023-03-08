@@ -1,0 +1,181 @@
+/* Components */
+
+.primary-button
+{
+    width: 166px;
+    height: 44px;
+    background: #DD783F;
+    border-radius: 3px;
+    font: 400 13px/1.54 Oxygen;
+
+}
+
+/* Main page */
+
+.menu
+{
+
+}
+
+.menu__logo
+{
+    font: ;
+}
+
+.menu__navigation
+{
+
+}
+
+.menu__navigation__item
+{
+    font: ;
+}
+
+.menu_footer
+{
+    background-image: ;
+}
+
+.hero-block
+{
+
+}
+
+.hero-block__button
+{
+
+}
+
+.header__title
+{
+    font: ;
+}
+
+.header_subtitile
+{
+    font: ;
+}
+
+.theme-navigation
+{
+
+}
+
+.theme-navigation__item
+{
+    font: ;
+}
+
+.section-header
+{
+    font: ;
+}
+
+.priority-content \\Featured Posts
+{
+
+}
+
+.priority-content__item
+{
+    background-image: ;
+}
+
+.priority-content__item__info
+{
+
+}
+
+.priority-content__item__info__title
+{
+    font: ;
+}
+
+.priority-content__item__info__description
+{
+    font: ;
+}
+
+.priority-content__item__info__sub-info
+{
+
+}
+
+
+.priority-content__item__info__sub-info__date
+{
+    font: ;
+}
+
+.priority-content__item__tag
+{
+
+}
+
+.sub-content \\Most Recent
+{
+
+}
+
+.sub-content__item
+{
+    background-image: ;
+}
+
+.sub-content__item__info
+{
+
+}
+
+.sub-content__item__info__title
+{
+    font: ;
+}
+
+.sub-content__item__info__description
+{
+    font: ;
+}
+
+.sub-content__item__info__sub-info
+{
+    
+}
+
+.sub-content__item__info__sub-info__date
+{
+    font: ;
+}
+
+.author
+{
+
+}
+
+/* Article */
+
+.menu_invert
+{
+    color: ;
+}
+
+.header__title_invert
+{
+    color: ;
+}
+
+.header_subtitile_invert
+{
+    color: ;
+}
+
+.cover
+{
+   
+}
+
+.text
+{
+    font: 
+}

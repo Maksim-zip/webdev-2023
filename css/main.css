@@ -1,0 +1,226 @@
+/* Main page */
+
+.menu
+{
+
+}
+
+.menu__logo
+{
+    font: 400 26px/1 "Lora";
+    color: #FFFFFF;
+}
+
+.menu__navigation
+{
+
+}
+
+.menu__item
+{
+    font: 400 12px/1.67 "Oxygen";
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    text-decoration: 0;
+    color: #FFFFFF;
+}
+
+.menu_footer
+{
+    height: 89px;
+    background: #4D565D url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(35, 47, 56, .6);
+}
+
+.hero-block
+{
+    height: 500px;
+    background: #000000 url(../images/canyon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-block__button
+{
+    width: 166px;
+    height: 44px;
+    background: #DD783F;
+    border-radius: 3px;
+    font: 400 13px/1.54 "Oxygen";
+    color: #FFFFFF;
+    border: 0;
+    text-transform: capitalize;
+}
+
+.header__title
+{
+    font: 400 50px/1.02 "Lora";
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.header__subtitile
+{
+    font: 400 17px/1.18 "Oxygen";
+    color: rgba(255, 255, 255, .63);
+
+}
+
+.theme-navigation
+{
+    height: 65px;
+    color: #FFFFFF;
+}
+
+.theme-navigation__item
+{
+    font: 400 14px/1.43 "Lora";
+    color: #768088;
+    text-decoration: 0;
+}
+
+.section-header
+{
+
+}
+
+.section-header__title
+{
+    font: 400 "Oxygen";
+}
+
+.section-header__divider
+{
+
+}
+
+.priority-content \\Featured Posts
+{
+
+}
+
+.priority-content__item
+{
+    background-image: ;
+}
+
+.priority-content__info
+{
+
+}
+
+.priority-content__title
+{
+    font: ;
+}
+
+.priority-content__description
+{
+    font: ;
+}
+
+.priority-content__sub-info
+{
+
+}
+
+.priority-content__date
+{
+    font: ;
+}
+
+.priority-content__author
+{
+    font: ;
+}
+
+.priority-content__avatar
+{
+    font: ;
+}
+
+.priority-content__name
+{
+    font: ;
+}
+
+
+.priority-content__tag
+{
+
+}
+
+.sub-content \\Most Recent
+{
+
+}
+
+.sub-content__item
+{
+    background-image: ;
+}
+
+.sub-content__info
+{
+
+}
+
+.sub-content__info-title
+{
+    font: ;
+}
+
+.sub-content__info-description
+{
+    font: ;
+}
+
+.sub-content__sub-info
+{
+    
+}
+
+.sub-content__item__info__sub-info__date
+{
+    font: ;
+}
+
+/* А так можно?
+.author
+{}
+
+.author__image
+{}
+
+.author__date
+}
+*/
+
+/* Article */
+
+.menu_invert
+{
+    color: ;
+}
+
+.header__title_invert
+{
+    color: ;
+}
+
+.header_subtitile_invert
+{
+    color: ;
+}
+
+.cover
+{
+   
+}
+
+.text
+{
+    font: 
+}
