@@ -1,8 +1,59 @@
-/* Main page */
+.title-large
+{
+    font: 400 50px/1.02 "Lora";
+}
+
+.title-medium
+{
+    font: 400 27px/1.11 "Lora";
+}
+
+.title-small
+{
+    font: 400 16px/1.31 "Lora";
+}
+
+.subtitle-large
+{
+    font: 400 17px/1.18 "Oxygen";
+}
+
+.subtitle-medium
+{
+    font: 400 14px/1.79 "Oxygen";
+}
+
+.subtitle-small
+{
+    font: 400 13px/1.46 "Oxygen";
+}
 
 .menu
 {
 
+}
+
+.menu_bg-picture
+{
+    height: 89px;
+    background: #4D565D url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 100vw rgba(35, 47, 56, .6);
+}
+
+.menu__content
+{
+
+}
+
+.menu__link
+{
+    font: 400 12px/1.67 "Oxygen";
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    text-decoration: 0;
+    color: #FFFFFF; 
 }
 
 .menu__logo
@@ -16,33 +67,41 @@
 
 }
 
-.menu__item
+.menu__link-subdued
 {
-    font: 400 12px/1.67 "Oxygen";
-    text-transform: uppercase;
-    letter-spacing: .6px;
-    text-decoration: 0;
-    color: #FFFFFF;
-}
-
-.menu_footer
-{
-    height: 89px;
-    background: #4D565D url(../images/footer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: rgba(35, 47, 56, .6);
+    color: rgba(255, 255, 255, .6);
 }
 
 .hero-block
 {
-    height: 500px;
+    /*height: 500px;*/
     background: #000000 url(../images/canyon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.hero-block__menu
+{
+
+}
+
 .hero-block__button
+{
+
+}
+
+.hero-block__title
+{
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.hero-block__subtitle
+{
+    color: rgba(255, 255, 255, .63);
+}
+
+.button
 {
     width: 166px;
     height: 44px;
@@ -54,173 +113,151 @@
     text-transform: capitalize;
 }
 
-.header__title
+.theme-menu
 {
-    font: 400 50px/1.02 "Lora";
-    letter-spacing: 2px;
     color: #FFFFFF;
 }
 
-.header__subtitile
-{
-    font: 400 17px/1.18 "Oxygen";
-    color: rgba(255, 255, 255, .63);
-
-}
-
-.theme-navigation
-{
-    height: 65px;
-    color: #FFFFFF;
-}
-
-.theme-navigation__item
+.theme-menu__link
 {
     font: 400 14px/1.43 "Lora";
     color: #768088;
     text-decoration: 0;
 }
 
-.section-header
+.main
 {
-
+    background: #F7F7F7;
 }
 
-.section-header__title
-{
-    font: 400 "Oxygen";
-}
-
-.section-header__divider
-{
-
-}
-
-.priority-content \\Featured Posts
-{
-
-}
-
-.priority-content__item
-{
-    background-image: ;
-}
-
-.priority-content__info
-{
-
-}
-
-.priority-content__title
-{
-    font: ;
-}
-
-.priority-content__description
-{
-    font: ;
-}
-
-.priority-content__sub-info
-{
-
-}
-
-.priority-content__date
-{
-    font: ;
-}
-
-.priority-content__author
-{
-    font: ;
-}
-
-.priority-content__avatar
-{
-    font: ;
-}
-
-.priority-content__name
-{
-    font: ;
-}
-
-
-.priority-content__tag
-{
-
-}
-
-.sub-content \\Most Recent
-{
-
-}
-
-.sub-content__item
-{
-    background-image: ;
-}
-
-.sub-content__info
-{
-
-}
-
-.sub-content__info-title
-{
-    font: ;
-}
-
-.sub-content__info-description
-{
-    font: ;
-}
-
-.sub-content__sub-info
+.section-title
 {
     
 }
 
-.sub-content__item__info__sub-info__date
+.section-title__text
 {
-    font: ;
+    font: 400 20px/1.35 "Oxygen";
+    letter-spacing: 2px;
 }
 
-/* А так можно?
-.author
-{}
-
-.author__image
-{}
-
-.author__date
+.section-title__divider
+{
+    width: 188px;
+    height: 1px;
+    background: #DEDEDE;
+    border: none;
 }
-*/
+
+.primary-content
+{
+
+}
+
+.primary-article
+{
+
+}
+
+.primary-article__title
+{
+ color: #FFFFFF;
+}
+
+.primary-article__subtitle
+{
+ color: rgba(255, 255, 255, 0.7);
+}
+
+.primary-article__info
+{
+ color: rgba(255, 255, 255, 0.7);
+}
+
+.secondary-content
+{
+
+}
+
+.secondary-article
+{
+    background: #FFFFFF;
+}
+
+.secondary-article__title
+{
+    color: #101315; 
+}
+
+.secondary-article__subtitle
+{
+ color: #7A7A7A;
+}
+
+.secondary-article__info
+{
+ color: #999999;
+}
+
+.caption
+{
+
+}
+
+.caption__text
+{
+    font: 400 12px/2.92 "Oxygen";
+}
+
+.tag
+{
+    width: 87px;
+    height: 26px;
+    font: 400 12px/1.08 "Oxygen";
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #DD783F;
+    border-radius: 2px;
+}
 
 /* Article */
-
-.menu_invert
+.menu__logo_invert
 {
-    color: ;
+    color: #2E2E2E;
 }
 
-.header__title_invert
+.menu__link_invert
 {
-    color: ;
+    color: #2E2E2E;
 }
 
-.header_subtitile_invert
+.article-header
 {
-    color: ;
+
 }
 
-.cover
+.article-header__title
 {
-   
+    color: #2E2E2E;
 }
 
-.text
+.article-header__subtitle
 {
-    font: 
+    color: rgba(46, 46, 46, 0.63);
+}
+
+.article-body
+{
+
+}
+
+.artticle__menu
+{
+    
+}
+
+.article__text
+{
+    font: 400 24px/1.46 "Oxygen";
+    color: #101315;
 }
