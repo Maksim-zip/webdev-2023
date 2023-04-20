@@ -6,7 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="hero-block">
@@ -19,7 +20,7 @@
                 <a href="#" class="menu__link">Contact</a>
             </nav>
         </div>
-        <h1 class="hero-block__title title-large"">Let's do it together.</h1>
+        <h1 class="hero-block__title title-large">Let's do it together.</h1>
         <p class="hero-block__subtitle subtitle-large">We travel the word in search of stories. Come along for the ride.</p>
         <button class="hero-block__button button">View latest post</button>
     </header>
@@ -34,108 +35,38 @@
     <div class="main">
         <h2 class="section-title">Featured Posts</h2>
         <section class="primary-content">
-            <div class="post1">
+            {{ range .FeaturedPosts }}
+            <div class="{{ .ImgModifier }} primary-article">
                 <div class="primary-article__content">
-                    <h3 class="primary-article__title title-medium">The Road Ahead</h3>
-                    <p class="primary-article__subtitle subtitle-medium">The road ahead might be paved — it might not be.</p>
+                    <h3 class="primary-article__title title-medium">{{ .Title }}</h3>
+                    <p class="primary-article__subtitle subtitle-medium">{{ .Subtitle }}</p>
                     <div class="primary-article__info caption">
                         <div class="caption__autor">
-                            <img class="caption__photo" src="./images/author1.png" alt="Author photo">
-                            <span class="caption__text">Mat Vogels</span>
+                            <img class="caption__photo" src="{{ .AuthorImg }}" alt="Author photo">
+                            <span class="caption__text">{{ .Author }}</span>
                         </div>
-                        <span class="caption__text">September 25, 2015</span>
+                        <span class="caption__text">{{ .PublishDate }}</span>
                     </div>      
                 </div>
             </div>
-            <div class="post2">
-                <span class="tag">Adventure</span>
-                <div class="primary-article__content">
-                    <h3 class="primary-article__title title-medium">From Top Down</h3>
-                    <p class="primary-article__subtitle subtitle-medium">Once a year, go someplace you’ve never been before.</p>
-                    <div class="primary-article__info caption">
-                        <div class="caption__autor">
-                            <img class="caption__photo" src="./images/author2.png" alt="Author photo">
-                            <span class="caption__text">William Wong</span>
-                        </div>
-                        <span class="caption__text">September 25, 2015</span>
-                    </div>
-                </div>
-            </div>
+            {{ end }}
         </section>
         <h2 class="section-title">Most Recent</h2>
         <section class="secondary-content">
+            {{ range .MostRecentPosts }}
             <div class="secondary-article">
-                <img class="secondary-article__cover" src="./images/article-cover1.jpg" alt="Artical cover">
-                <h3 class="secondary-article__title title-small">Still Standing Tall</h3>
-                <p class="secondary-article__subtitle subtitle-small">Life begins at the end of your comfort zone.</p>
+                <img class="secondary-article__cover" src="{{ .Image }}" alt="Artical cover">
+                <h3 class="secondary-article__title title-small">{{ .Title }}</h3>
+                <p class="secondary-article__subtitle subtitle-small">{{ .Subtitle }}</p>
                 <div class="secondary-article__info caption caption_devided">
                     <div class="caption__autor">
-                        <img class="caption__photo" src="./images/author2.png" alt="Author photo">
-                        <span class="caption__text">William Wong</span>
+                        <img class="caption__photo" src="{{ .AuthorImg }}" alt="Author photo">
+                        <span class="caption__text">{{ .Author }}</span>
                     </div>
-                    <span class="caption__text">09/25/2015</span>
+                    <span class="caption__text">{{ .PublishDate }}</span>
                 </div>
             </div>
-            <div class="secondary-article">
-                <img class="secondary-article__cover" src="./images/article-cover2.png" alt="Artical cover">
-                <h3 class="secondary-article__title title-small">Sunny Side Up</h3>
-                <p class="secondary-article__subtitle subtitle-small">No place is ever as bad as they tell you it’s going to be.</p>
-                <div class="secondary-article__info caption caption_devided">
-                    <div class="caption__autor">
-                        <img class="caption__photo" src="./images/author1.png" alt="Author photo">
-                        <span class="caption__text">Mat Vogels</span>
-                    </div>
-                    <span class="caption__text">09/15/2015</span>
-                </div>
-            </div>
-            <div class="secondary-article">
-                <img class="secondary-article__cover" src="./images/article-cover3.png" alt="Artical cover">
-                <h3 class="secondary-article__title title-small">Water Falls</h3>
-                <p class="secondary-article__subtitle subtitle-small">We travel not to escape life, but for life not to escape us.</p>
-                <div class="secondary-article__info caption caption_devided">
-                    <div class="caption__autor">
-                        <img class="caption__photo" src="./images/author1.png" alt="Author photo">
-                        <span class="caption__text">Mat Vogels</span>
-                    </div>
-                    <span class="caption__text">09/25/2015</span>
-                </div>
-            </div>
-            <div class="secondary-article">
-                <img class="secondary-article__cover" src="./images/article-cover4.png" alt="Artical cover">
-                <h3 class="secondary-article__title title-small">Through the Mist</h3>
-                <p class="secondary-article__subtitle subtitle-small">Travel makes you see what a tiny place you occupy in the world.</p>
-                <div class="secondary-article__info caption caption_devided">
-                    <div class="caption__autor">
-                        <img class="caption__photo" src="./images/author2.png" alt="Author photo">
-                        <span class="caption__text">William Wong</span>
-                    </div>
-                    <span class="caption__text">09/25/2015</span>
-                </div>
-            </div>
-            <div class="secondary-article">
-                <img class="secondary-article__cover" src="./images/article-cover5.png" alt="Artical cover">
-                <h3 class="secondary-article__title title-small">Awaken Early</h3>
-                <p class="secondary-article__subtitle subtitle-small">Not all those who wander are lost.</p>
-                <div class="secondary-article__info caption caption_devided">
-                    <div class="caption__autor">
-                        <img class="caption__photo" src="./images/author1.png" alt="Author photo">
-                        <span class="caption__text">Mat Vogels</span>
-                    </div>
-                    <span class="caption__text">09/15/2015</span>
-                </div>
-            </div>
-            <div class="secondary-article">
-                <img class="secondary-article__cover" src="./images/article-cover6.png" alt="Artical cover">
-                <h3 class="secondary-article__title title-small">Try it Always</h3>
-                <p class="secondary-article__subtitle subtitle-small">The world is a book, and those who do not travel read only one page.</p>
-                <div class="secondary-article__info caption caption_devided">
-                    <div class="caption__autor">
-                        <img class="caption__photo" src="./images/author1.png" alt="Author photo">
-                        <span class="caption__text">Mat Vogels</span>
-                    </div>
-                    <span class="caption__text">09/25/2015</span>
-                </div>
-            </div>
+            {{ end }}
         </section>
     </div>
 

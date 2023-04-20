@@ -81,7 +81,7 @@ body
 .hero-block
 {
     height: 500px;
-    background: #000000 url(./images/canyon.jpg);
+    background: #000000 url(../images/canyon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /*display: flex;
@@ -204,40 +204,34 @@ body
     margin: 16px 0 60px 0;
 }
 
-/*
+
 .primary-article
 {
-
-}*/
-
-.post1
-{
     width: 460px;
     height: 280px;
     border-radius: 3px;
-    background-image: url(./images/primary-article-cover1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px 20px 15px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.post2
-{
-    width: 460px;
-    height: 280px;
-    border-radius: 3px;
-    background-image: url(./images/primary-article-cover2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 20px 20px 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column-reverse;
     position: relative;
 }
+
+.primary-article_first
+{
+    background-image: url(../images/primary-article-cover1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.primary-article_second
+{
+    background-image: url(../images/primary-article-cover2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 .primary-article__content
 {
@@ -402,11 +396,12 @@ body
 {
     font: 400 24px/1.46 "Oxygen";
     color: #101315;
+    white-space: pre-line;
 }
 
 .footer
 {
-    background: #4D565D url(./images/footer.jpg);
+    background: #4D565D url(../images/footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
