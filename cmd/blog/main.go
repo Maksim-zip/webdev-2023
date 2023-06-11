@@ -1,12 +1,16 @@
 package main
 
+//вызывается при запуске скрипта (go run ...)
+//показвает какие обрабочтики (handlers) используются при действиях на страницер
+
 import (
 	"database/sql"
 	"log"
 	"net/http"
 
 	_ "github.com/go-sql-driver/mysql" //Расширение для работы с БД
-	"github.com/jmoiron/sqlx"          //Расширение для использования select
+	"github.com/gorilla/mux"
+	"github.com/jmoiron/sqlx" //Расширение для использования select
 )
 
 const (
@@ -20,14 +24,14 @@ func main() {
 		log.Fatal(err)
 	}
 
-	dbx := sqlx.NewDb(db, dbDriverName) //Распширяем функционал БД внутри GO
+	dbx := sqlx.NewDb(db, dbDriverName) //Расширяем функционал БД внутри GO
 
-	mux := http.NewServeMux() //Распределяем функции по урлам
+	mux := mux.NewRouter() //заменил NewServMux на NewRouter и библиотеку http на mux
 	mux.HandleFunc("/home", index(dbx))
-	mux.HandleFunc("/post", post)
+	mux.HandleFunc("/post/{postID}", post(dbx)) //обрабатываю теперь не по посту, а по пост id
 
 	// Реализуем отдачу статики
-	mux.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("./assets"))))
+	mux.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", http.FileServer(http.Dir("./assets/"))))
 
 	log.Println("Start server " + port)
 	err = http.ListenAndServe(port, mux)

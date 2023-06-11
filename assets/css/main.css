@@ -215,6 +215,7 @@ body
     display: flex;
     flex-direction: column-reverse;
     position: relative;
+    text-decoration: 0;
 }
 
 .primary-article_first
@@ -270,6 +271,7 @@ body
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
+    text-decoration: 0;
 }
 
 .secondary-article__cover
