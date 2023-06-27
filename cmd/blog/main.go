@@ -29,6 +29,8 @@ func main() {
 	mux := mux.NewRouter() //заменил NewServMux на NewRouter и библиотеку http на mux
 	mux.HandleFunc("/home", index(dbx))
 	mux.HandleFunc("/post/{postID}", post(dbx)) //обрабатываю теперь не по посту, а по пост id
+	mux.HandleFunc("/login", login)
+	mux.HandleFunc("/admin", admin)
 
 	// Реализуем отдачу статики
 	mux.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", http.FileServer(http.Dir("./assets/"))))

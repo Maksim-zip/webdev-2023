@@ -1,0 +1,106 @@
+.header-1
+{
+    font: 400 34px/1.18 "Lora";
+    color: #2E2E2E;
+    margin: 0;
+}
+
+.descritpion-large
+{
+    font: 400 17px/1.47 "Oxygen";
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.descritpion-tiny
+{
+    font: 400 12px/1.33 "Oxygen";
+    margin: 0;
+} 
+
+.button
+{
+    width: 93px;
+    height: 48px;
+    background: #DD783F;
+    border-radius: 3px;
+    font: 400 16px/1.5 "Oxygen";
+    color: #FFFFFF;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form
+{
+    width: 480px;
+    height: 560px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: 0;
+    padding: 56px 40px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.login-form__header
+{
+    margin: 0 0 50px;
+}
+
+.login-form__input-group
+{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-form__input
+{
+    height: 40px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #EAEAEA;
+    box-sizing: border-box;
+}
+
+.login-form__input:focus
+{
+    border-bottom: 2px solid #2E2E2E;
+    outline: 0;
+}
+
+.logo-block
+{
+    margin-right: 368px;
+}
+
+body
+{
+    background: #000000 url(../images/loginbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 130px 120px 230px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form__input-password
+{
+    position: relative;
+}
+
+.login-form__password-eye
+{
+    position: absolute;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    right: 5px;
+    bottom: 8px;
+}

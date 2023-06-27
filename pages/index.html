@@ -36,7 +36,7 @@
         <h2 class="section-title">Featured Posts</h2>
         <section class="primary-content">
             {{ range .FeaturedPosts }}
-            <a href="/post/{{ .PostID }}" class="{{ .ImgModifier }} primary-article"> <!-- 1. заменил div на a, указал адрес ссылки -->
+            <a href="/post/{{ .PostID }}" class="{{ .ImgModifier }} primary-article"> <!-- 7lw(1) заменил div на a, указал адрес ссылки -->
                 <div class="primary-article__content">
                     <h3 class="primary-article__title title-medium">{{ .Title }}</h3>
                     <p class="primary-article__subtitle subtitle-medium">{{ .Subtitle }}</p>
@@ -73,7 +73,7 @@
     <footer class="footer">
         <span class="section-title footer__title">Stay in touch</span>
         <form class="contact-form" action="#">
-            <input class="contact-form__email" type="email" name="email" placeholder="Enter your emwil adress">
+            <input class="contact-form__email" type="email" name="email" placeholder="Enter your email adress">
             <input class="contact-form__button" type="submit" value="Submit">
         </form>
 
